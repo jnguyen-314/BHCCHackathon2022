@@ -95,7 +95,7 @@ div.imagebackground {
 	/*For bringing text down and center */
 	display: flex;
 	align-items: flex-end;
-	justify-content: center;
+	justify-content: space-between;
 	height: 100%;
 	color: white;
 }
