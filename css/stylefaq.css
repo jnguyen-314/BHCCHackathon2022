@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import
+url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+/*Doing a three color scheme
+magenta #ff33aa
+blue #33aaff
+green #33ffaa
+
+*/
+
+/*Default settings are the asterisk*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto","sans-serif";
+	font-size: 12pt;
+}
+
+/*Nav Stuff */
+
+
+nav, nav ul {
+	background-color: #ff33aa;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style:none;
+}
+
+nav ul li {
+	padding:20px;
+	border-bottom: 4px solid #ff33aa;
+}
+
+nav ul li:hover {
+	border-bottom: 4px solid #33aaff;
+}
+
+nav img {
+	width: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	
+}
+
+
+/*Main stuff with articles */
+
+main {
+	width: 80%;
+	margin: 10px auto;
+	display:flex;
+	justify-content: space-around;
+}
+
+article {
+	width: 40%;
+}
+
+article h1, article h2 {
+	text-align: center;
+	font-size: 36pt;
+}
+
+article h2 {
+	text-align: left;
+	font-size: 18pt;
+	margin-top: 20px;
+}
+
+article p {
+	font-size: 12pt;
+}
+
+/*Pictures for faq */
+aside {
+	width: 40%;
+}
+
+div.imagebackground {
+	background-image: linear-gradient(180deg, #fff0, #fff0,#fff0, #000f),
+		url("../image/photo.png");
+	background-size: cover;
+	background-position: center;
+	
+	/*For bringing text down and center */
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 100%;
+	color: white;
+}
+
+div.imagebackground p.gallery{
+	margin-bottom: 10px;
+}
+
+p.gallery.left, p.gallery.right {
+	cursor: pointer;
+}
+
+/*Media Query for mobile */
+
+@media (max-width: 600px) {
+	main {
+		display: block;
+	}
+	article, aside {
+		width: 100%;
+	}
+	aside {
+		height: 300px;
+		margin-top: 20px;
+	}
+}
+

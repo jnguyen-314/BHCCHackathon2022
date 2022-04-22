@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import
+url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+/*Doing a three color scheme
+magenta #ff33aa
+blue #33aaff
+green #33ffaa
+
+*/
+
+/*Default settings are the asterisk*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto","sans-serif";
+	font-size: 12pt;
+}
+
+/*Nav Stuff */
+
+
+nav, nav ul {
+	background-color: #ff33aa;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style:none;
+}
+
+nav ul li {
+	padding:20px;
+	border-bottom: 4px solid #ff33aa;
+}
+
+nav ul li:hover {
+	border-bottom: 4px solid #33aaff;
+}
+
+nav img {
+	width: 50px;
+}
+
+/*Nav 2 Stuff some merged with first nav*/
+
+nav.nav2, nav.nav2 ul{
+	background-color: #33ffaa;
+}
+
+nav.nav2 ul li {
+	padding:20px;
+	border-bottom: 4px solid #33ffaa;
+}
+
+nav.nav2 ul li:hover {
+	border-bottom: 4px solid #33aaff;
+}
+
+
+
+/*Link editing */
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	
+}
+
+
+/*Main stuff with articles */
+
+main {
+	width: 80%;
+	margin: auto;
+}
+
+article h1, article h2 {
+	text-align: center;
+	font-size: 36pt;
+	padding: 10px;
+}
+
+article h2 {
+	font-size: 18pt;
+}
+
+
+/*Media for screen responsiveness with mobile phones */
+
+
