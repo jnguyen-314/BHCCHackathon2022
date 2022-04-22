@@ -44,3 +44,49 @@ function printGallery() {
 	document.querySelector("div.imagebackground").style.backgroundImage = "linear-gradient(180deg, #fff0, #fff0, #fff0, #000f)";
 	document.querySelector("div.imagebackground").style.backgroundImage += ",url('image/" + theGallery.images[page] + "')";//image change
 }
+
+
+/////////////////////////Below is for the answers of the FAQ
+
+var headerTwo = document.querySelectorAll("h2 i");
+
+var pNum = ["p.pZero", "p.pOne", "p.pTwo", "p.pThree", "p.pFour", "p.pFive"];
+
+var pOpen = ["closed","closed","closed","closed","closed","closed"];
+
+var pAnswer = [
+	//First Answer
+	'To "Accessing mental health services and overcoming mental health stigma."',
+	//Second Answer
+	"HELLO",
+	//Third Answer 
+	"HELLO",
+	//Fourth Answer
+	"HELLO",
+	//Fifth Answer
+	"HELLO",
+	//Sixth Answer
+	"HELLO"
+];
+
+function showAnswer(num) {
+	//Hides answers
+	if (pOpen[num] == "open") {
+	document.querySelector(pNum[num]).innerHTML = "";
+	
+	headerTwo[num].classList.remove("fa-caret-down");
+	headerTwo[num].classList.add("fa-caret-up");
+	pOpen[num] = "closed";
+		return;
+	}
+	
+	
+	
+	//Shows answers
+	document.querySelector(pNum[num]).innerHTML = "&emsp;" + pAnswer[num];
+	
+	headerTwo[num].classList.remove("fa-caret-up");
+	headerTwo[num].classList.add("fa-caret-down");	
+	pOpen[num] = "open";
+	
+}
