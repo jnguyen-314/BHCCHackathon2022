@@ -5,15 +5,6 @@
 url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
-
-/*Doing a three color scheme
-magenta #ff33aa
-blue #33aaff
-green #33ffaa
-
-*/
-
-/*Default settings are the asterisk*/
 * {
 	margin: 0;
 	padding: 0;
@@ -56,25 +47,33 @@ a {
 	
 }
 
-
-/*Main stuff with articles */
+/*Stats showing to audience. */
 
 main {
 	width: 80%;
-	margin: auto;
+	margin: 20px auto;
 }
 
-article h1, article h2 {
-	text-align: center;
-	font-size: 36pt;
-	padding: 10px;
+div.imagebackground {
+	background-image: linear-gradient(180deg, #fff0, #fff0,#fff0, #000f),
+		url("../image/photo.png");
+	background-size: cover;
+	background-position: center;
+	
+	/*For bringing text down and center */
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	height: 600px;
+	color: white;
+	
 }
 
-article h2 {
-	font-size: 18pt;
+
+div.imagebackground p.gallery{
+	margin-bottom: 10px;
 }
 
-
-/*Media for screen responsiveness with mobile phones */
-
-
+p.gallery.left, p.gallery.right {
+	cursor: pointer;
+}
