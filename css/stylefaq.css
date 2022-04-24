@@ -52,6 +52,12 @@ a {
 	
 }
 
+p.pTwo a {
+	text-decoration: underline;
+	color: blue;
+	font-weight: 700;
+}
+
 
 /*Main stuff with articles */
 
