@@ -79,3 +79,9 @@ div.imagebackground p.gallery{
 p.gallery.left, p.gallery.right {
 	cursor: pointer;
 }
+
+@media (max-width: 600px) {
+	main {
+		font-size: 12pt;
+	}
+}
