@@ -3,16 +3,16 @@
 class theGallery {};
 	
 	theGallery.images = [
-		"photo.png",
-		"photo2.png",
-		"photo3.png"
+		"logopost.png",
+		"slide0.png",
+		"slide1.png"
 	];
 
 
 	theGallery.description = [
-		"Your red Photo",
-		"Your yellow Photo",
-		"Your green Photo"
+		"Our Logo",
+		"The BPHC",
+		"The Fast Facts"
 	];
 
 //The functions below
@@ -45,6 +45,7 @@ function printGallery() {
 	document.querySelector("div.imagebackground").style.backgroundImage += ",url('image/" + theGallery.images[page] + "')";//image change
 }
 
+printGallery();
 
 /////////////////////////Below is for the answers of the FAQ
 
@@ -58,7 +59,7 @@ var pAnswer = [
 	//First Answer
 	'To "Accessing mental health services and overcoming mental health stigma."',
 	//Second Answer
-	"HELLO",
+	"The $25,000 dollars will be budgeted into: <br>- $10,000 Initial Staffing <br>- $15,000 Email Account and API",
 	//Third Answer 
 	"HELLO",
 	//Fourth Answer

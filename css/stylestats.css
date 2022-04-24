@@ -56,15 +56,16 @@ main {
 
 div.imagebackground {
 	background-image: linear-gradient(180deg, #fff0, #fff0,#fff0, #000f),
-		url("../image/photo.png");
-	background-size: cover;
+		url("../image/logopost.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 	background-position: center;
 	
 	/*For bringing text down and center */
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	height: 600px;
+	height: 500px;
 	color: white;
 	
 }
@@ -72,6 +73,7 @@ div.imagebackground {
 
 div.imagebackground p.gallery{
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 p.gallery.left, p.gallery.right {

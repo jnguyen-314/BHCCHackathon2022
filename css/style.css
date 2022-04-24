@@ -74,6 +74,41 @@ article h2 {
 	font-size: 18pt;
 }
 
+section {
+	animation: mymove 10s infinite;
+	margin: 20px auto;
+	height: 500px;
+}
+
+@keyframes mymove {
+	0%, 100% {
+		background-image: url("https://media3.giphy.com/media/UtVjgQuWRwyIUuZA2Y/giphy.gif?cid=ecf05e47aglqhh73stf232egmeh2ftjoobnhiewisgts8oks&rid=giphy.gif&ct=g");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	25% {
+		background-image: url("https://media4.giphy.com/media/f74WQIhbzBKAusL2v1/giphy.gif?cid=ecf05e470d22t0dpeufrr0hrb2608zmaciuzmd3f1s0xtsx5&rid=giphy.gif&ct=g");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	50% {
+		background-image: url("https://media0.giphy.com/media/PjJ1cLHqLEveXysGDB/giphy.gif?cid=ecf05e470d22t0dpeufrr0hrb2608zmaciuzmd3f1s0xtsx5&rid=giphy.gif&ct=g");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	75% {
+		background-image: url("https://media2.giphy.com/media/gAVUaC0JZInb9twQX5/giphy.gif?cid=790b761135e8168621f735acf2eaf4ec632b5d3fa02bb763&rid=giphy.gif&ct=g");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	
+}
+
 
 /*Media for screen responsiveness with mobile phones */
 
